@@ -6,6 +6,7 @@ import setuptools
 
 setuptools.setup(
   name='remoteconfig',
+  url='https://github.com/maxzheng/remoteconfig',
   version='0.1.0',
 
   author='Max Zheng',
