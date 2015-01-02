@@ -11,6 +11,15 @@ Welcome to remoteconfig's documentation!
 
    README
 
+API Documentation
+=================
+
+.. toctree::
+   :maxdepth: 2
+
+   manager
+   utils
+
 Indices and tables
 ==================
 
