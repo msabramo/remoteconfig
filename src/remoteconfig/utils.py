@@ -2,6 +2,7 @@ import base64
 import os
 import requests
 import tempfile
+import time
 
 
 def _url_content_cache_file(url):

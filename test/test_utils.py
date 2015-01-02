@@ -1,9 +1,14 @@
-from mock import patch
+import os
+import time
+
+from mock import patch, Mock
+import pytest
+
 from remoteconfig.utils import url_content, _url_content_cache_file
 
 
 def test_url_content():
-  assert 'remoteconfig' in url_content('https://raw.githubusercontent.com/maxzheng/remoteconfig/master/README.rst')
+  assert 'remoteconfig' in url_content('https://raw.githubusercontent.com/maxzheng/remoteconfig/master/docs/README.rst')
 
   with patch('requests.get') as requests_get:
     mock_response = Mock()
